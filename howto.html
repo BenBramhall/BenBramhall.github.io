@@ -34,23 +34,6 @@ li a:hover {
   background-color: #111;
 }
 
-/* keep your animation */
-.animated-text {
-  font-size: 2rem;
-  opacity: 0;
-  animation: fadeSlide 5s ease-out forwards;
-}
-
-@keyframes fadeSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 </style>
 
 
@@ -60,10 +43,209 @@ li a:hover {
 
 <!-- MENU -->
 <ul>
-  <li><a href="https://benbramhall.github.io">Home</a></li>
-  <li><a href="https://benbramhall.github.io/r5">Rockets</a></li>
-  <li><a href="https://benbramhall.github.io/about1">About</a></li>
-  <li><a href="https://benbramhall.github.io/howto">How To</a></li>
+  <li><a href="file:///C:/Users/benjamin939/Desktop/Code/blog50.html">Home</a></li>
+  <li><a href="file:///C:/Users/benjamin939/Desktop/Code/r5.html">Rockets</a></li>
+  <li><a href="file:///C:/Users/benjamin939/Desktop/Code/about1.html">About</a></li>
+  <li><a href="file:///C:/Users/benjamin939/Desktop/Code/howto.html">How To</a></li>
 </ul>
 
 <h1>Tutorials</h1>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3e0cc;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Navigation Menu */
+        ul {
+            list-style-type: none;
+            margin: 0 0 30px 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+	/* keep your animation */
+	.animated-text {
+  	font-size: 2rem;
+  	opacity: 0;
+  	animation: fadeSlide 5s ease-out forwards;
+	}
+
+	@keyframes fadeSlide {
+ 	 0% {
+   	 opacity: 0;
+   	 transform: translateY(20px);
+ 	 }
+  	100% {
+    	opacity: 1;
+    	transform: translateY(0);
+  	}
+}
+
+
+        /* Tutorial Grid */
+        .tutorials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tutorial-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tutorial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image {
+            height: 180px;
+            background: linear-gradient(135deg, #2c5f2d, #97bc62);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .difficulty {
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .beginner { background: #d4edda; color: #155724; }
+        .intermediate { background: #fff3cd; color: #856404; }
+        .advanced { background: #f8d7da; color: #721c24; }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+
+
+    
+    <p class="subtitle">Step-by-step guides to help you build rockets, drones, and more</p>
+
+    <!-- Tutorial Cards -->
+    <div class="tutorials-grid">
+
+        <div class="tutorial-card">
+            <div class="card-image">🚀</div>
+            <div class="card-content">
+                <h3>Building Your First Model Rocket</h3>
+                <p>Complete beginner guide to assembling, painting, and launching your first rocket.</p>
+                <div class="meta">
+                    <span class="difficulty beginner">Beginner</span>
+                    
+                </div>
+                <a href="#" class="btn">Start Tutorial →</a>
+            </div>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="card-image">🛠️</div>
+            <div class="card-content">
+                <h3>Building Your First Drone</h3>
+                <p>How to build the foundation of a 10-15 lb drone using sturdy, lightweight materials.</p>
+                <div class="meta">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    
+                </div>
+                <a href="#" class="btn">Start Tutorial →</a>
+            </div>
+        </div>
+
+        <div class="tutorial-card">
+            <div class="card-image">📡</div>
+            <div class="card-content">
+                <h3>Basic Electronics for Rockets & Drones</h3>
+                <p>Learn about flight controllers, ESCs, batteries, and wiring safety.</p>
+                <div class="meta">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    
+                </div>
+                <a href="#" class="btn">Start Tutorial →</a>
+            </div>
+        </div>
+
+        <!-- Add more cards here as needed -->
+
+    </div>
+
+</body>
+</html>
