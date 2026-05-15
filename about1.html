@@ -1,73 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"> 
-<title>Working with Rockets - About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Rockets - About</title>
+    <link rel="icon" type="image/png" href="changethislater.png">
 
-<link rel="icon" type="image/png" href="changethislater.png">
+    <script src="https://platform-api.sharethis.com/js/sharethis.js" defer></script>
 
-<script src="https://platform-api.sharethis.com/js/sharethis.js" defer></script>
-<body>
-<style>
-/* MENU STYLING */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  border-radius: 20px;
-}
+    <style>
+        /* MENU STYLING */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 20px;
+        }
 
-li {
-  float: left;
-}
+        li {
+            float: left;
+        }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
 
-li a:hover {
-  background-color: #111;
-}
+        li a:hover {
+            background-color: #111;
+        }
 
-/* keep your animation */
-.animated-text {
-  font-size: 2rem;
-  opacity: 0;
-  animation: fadeSlide 5s ease-out forwards;
-}
+        /* Animation */
+        .animated-text {
+            font-size: 2rem;
+            opacity: 0;
+            animation: fadeSlide 5s ease-out forwards;
+        }
 
-@keyframes fadeSlide {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
+        body {
+            font-family: Arial;
+            background-color: #e3e0cc;
+            margin: 20px;
+        }
 
+        .main-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .main-content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .main-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+<body>
 
-<body style="font-family: Arial; background-color: #e3e0cc; margin: 20px;">
+    <!-- Div 1: Navigation -->
+    <div class="nav-container">
+        <ul>
+            <li><a href="https://benbramhall.github.io/">Home</a></li>
+            <li><a href="https://benbramhall.github.io/r5">Rockets</a></li>
+            <li><a href="https://benbramhall.github.io/about1">About</a></li>
+            <li><a href="file:///C:/Users/benjamin939/Desktop/Code/howto.html">How To</a></li>
+        </ul>
+    </div>
 
-<!-- MENU -->
-<ul>
-  <li><a href="https://benbramhall.github.io/">Home</a></li>
-  <li><a href="https://benbramhall.github.io/r5">Rockets</a></li>
-  <li><a href="https://benbramhall.github.io/about1">About</a></li>
-  <li><a href="file:///C:/Users/benjamin939/Desktop/Code/howto.html">How To</a></li>
-</ul>
+    <!-- Div 2: Page Title -->
+    <div class="title-container">
+        <h1 class="animated-text">About this website</h1>
+    </div>
 
-<h1 class="animated-text">About this website</h1>
-<p> This website is made to document rockets and the technology that works behind it.</p>
-<a href="https://github.com/BenBramhall" >Follow me on GitHub.com/BenBramhall for more projects. (Mostly Python)</a>
-</body> 
+    <!-- Div 3: Main Content -->
+    <div class="main-content">
+        <p>This website is made to document rockets and the technology that works behind it.</p>
+        <p>
+            <a href="https://github.com/BenBramhall" target="_blank">
+                Follow me on GitHub.com/BenBramhall for more projects. (Mostly Python)
+            </a>
+        </p>
+    </div>
+
+</body>
+</html>
